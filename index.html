@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="app">
+            <input type="text" v-model.number="num" placeholder="number" >
+            <select v-model="operation" name="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" v-model.number="num2" placeholder="number">
+            <button type="button" class="btn btn-success"  @click="add" >=</button>
+            <span id="output">{{result}}</span>
+                     
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
